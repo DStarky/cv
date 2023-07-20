@@ -1,5 +1,21 @@
 import "./index.html";
 import "./index.scss";
-import { mult, sum } from "./modules/calc";
+import { i18n } from "./modules/i18n";
+import render from "./modules/render";
 
-console.log(_.join(['Hello', 'World'], ''));
+const cv = document.querySelector('.cv');
+const buttonEng = document.querySelector('.button-eng');
+const buttonRus = document.querySelector('.button-rus');
+
+
+cv.innerHTML = render();
+
+buttonEng.addEventListener('click', (e) => {
+  i18n.changeLanguage('en');
+  cv.innerHTML = render();
+})
+
+buttonRus.addEventListener('click', (e) => {
+  i18n.changeLanguage('ru');
+  cv.innerHTML = render();
+})

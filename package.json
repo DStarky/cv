@@ -23,6 +23,7 @@
     "filemanager-webpack-plugin": "^8.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "i18next": "^23.2.11",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.26",
